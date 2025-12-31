@@ -8,42 +8,40 @@ const NewYearGlowBadge = () => {
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.6, delay: 0.8 }}
     >
-      {/* Left sparkle */}
+      {/* Left firework */}
       <motion.span 
-        className="text-gold-light text-lg"
+        className="text-gold-light text-xl"
         animate={{ 
-          rotate: [0, 180, 360],
-          scale: [1, 1.2, 1],
+          scale: [1, 1.3, 1],
         }}
         transition={{ 
-          duration: 3, 
+          duration: 1.5, 
           repeat: Infinity,
           ease: "easeInOut"
         }}
       >
-        ✦
+        🎆
       </motion.span>
       
       {/* Text with subtle glow */}
-      <span className="text-sm font-semibold text-foreground tracking-wide">
-        New Year 2026 Special Offers
+      <span className="text-sm sm:text-base font-semibold text-gradient-gold tracking-wide">
+        Celebrate 2026 – Exclusive New Year Deals!
       </span>
       
       {/* Right sparkle */}
       <motion.span 
-        className="text-gold-light text-lg"
+        className="text-gold-light text-xl"
         animate={{ 
-          rotate: [360, 180, 0],
-          scale: [1, 1.2, 1],
+          scale: [1, 1.3, 1],
         }}
         transition={{ 
-          duration: 3, 
+          duration: 1.5, 
           repeat: Infinity,
           ease: "easeInOut",
           delay: 0.5
         }}
       >
-        ✦
+        ✨
       </motion.span>
 
       {/* Glow effect behind */}

@@ -188,10 +188,20 @@ const Home = () => {
               </span>
             </h1>
 
+            {/* New Year 2026 Tagline */}
+            <motion.p 
+              className="text-2xl sm:text-3xl lg:text-4xl mb-2 font-serif font-bold text-gradient-gold"
+              initial={{ opacity: 0, scale: 0.9 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+            >
+              🎆 Start 2026 with Sellkar! 🎆
+            </motion.p>
+
             {/* Subtitle with Typing Effect */}
             <p className="text-xl sm:text-2xl lg:text-3xl mb-4 font-sans font-bold min-h-[2.5rem] text-foreground">
               <TypingText 
-                text="Your Trusted Marketplace for Quality Electronics" 
+                text="New Year, New Beginnings – Sell Smart!" 
                 speed={40}
               />
             </p>
@@ -203,7 +213,7 @@ const Home = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: 0.4 }}
             >
-              Get instant quotes, schedule convenient pickups, and receive immediate payment for your premium gadgets. Professional, secure, and hassle-free.
+              Ring in the New Year by turning your old gadgets into instant cash! Get the best prices, hassle-free pickup, and celebrate 2026 with extra money in your pocket.
             </motion.p>
 
             {/* CTA Button with glow pulse */}
